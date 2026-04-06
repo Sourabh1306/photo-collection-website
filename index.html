@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Collection Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>📸 PhotoSite</h2>
+</nav>
+
+<section class="hero">
+  <h1>Welcome to Your Photo Collection</h1>
+  <p>Upload, organize, and manage your photos easily!</p>
+</section>
+
+<section class="main">
+
+  <div class="album-section">
+    <h2>Create Album</h2>
+    <input type="text" id="albumName" placeholder="Enter album name">
+    <button onclick="createAlbum()">Create</button>
+
+    <h3>Your Albums</h3>
+    <div id="albums"></div>
+  </div>
+
+  <div class="gallery-section">
+    <h2 id="currentAlbumTitle">Select an Album</h2>
+
+    <input type="file" id="upload" multiple accept="image/*">
+
+    <div class="gallery" id="gallery"></div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Photo Collection Website | College Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
